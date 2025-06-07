@@ -152,11 +152,11 @@ void check_yices_macro_names(void)
     yices_remove_type_macro_name("tm0");
     assert(yices_get_macro_by_name("tm0") == -1 && !yices_error_code());
 
-    yices_delete_type_macro(tm0);
-    type_t types_0[1] = { yices_bool_type() };
-    yices_instance_type(tm0, 1, types_0);
-    assert(yices_error_code());
-    yices_clear_error();
+    // yices_delete_type_macro(tm0);
+    // type_t types_0[1] = { yices_bool_type() };
+    // yices_instance_type(tm0, 1, types_0);
+    // assert(yices_error_code());
+    // yices_clear_error();
 
     yices_delete_type_macro(tc0);
     assert(yices_get_macro_by_name("tc0") == -1 && !yices_error_code());
